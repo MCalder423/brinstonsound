@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{787bfd2a-c2a4-4d08-9291-fe8dd1b801be}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>AirhornPlayer.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".idea\desktop.ini" />
+    <Content Include=".idea\scopes\desktop.ini" />
+    <Content Include="desktop.ini" />
+    <Content Include="garbage\desktop.ini" />
+    <Content Include="SystemSounds\desktop.ini" />
+    <Content Include="__pycache__\desktop.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AirhornPlayer.py" />
+    <Compile Include="cards.py" />
+    <Compile Include="FileUtils.py" />
+    <Compile Include="garbage\wavplayer.py" />
+    <Compile Include="garbage\wavplayer_alsaaudio.py" />
+    <Compile Include="garbage\wavplayer_ossaudio.py" />
+    <Compile Include="garbage\wavplayer_pyglet.py" />
+    <Compile Include="ListDrives.py" />
+    <Compile Include="mod_Ambient.py" />
+    <Compile Include="mod_MessageHandler.py" />
+    <Compile Include="mod_playwav.py" />
+    <Compile Include="setup.py" />
+    <Compile Include="SoundClip.py" />
+    <Compile Include="SoundUtils.py" />
+    <Compile Include="TcpListener.py" />
+    <Compile Include="teststuff.py" />
+    <Compile Include="TextToSpeech.py" />
+    <Compile Include="UDPServer.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".idea" />
+    <Folder Include=".idea\scopes" />
+    <Folder Include="garbage" />
+    <Folder Include="SystemSounds" />
+    <Folder Include="__pycache__" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
