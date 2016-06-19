@@ -1,0 +1,45 @@
+{
+	"type": "Collection",
+	"properties": {
+		"Name": {
+			"name": "Name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "Name",
+			"order": 0
+		},
+		"Location": {
+			"name": "Location",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "Location",
+			"order": 1
+		},
+		"Volume": {
+			"name": "Volume",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "Volume",
+			"order": 2
+		},
+		"Balance": {
+			"name": "Balance",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "Balance",
+			"order": 3
+		},
+		"Fade": {
+			"name": "Fade",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "Fade",
+			"order": 4
+		}
+	}
+}

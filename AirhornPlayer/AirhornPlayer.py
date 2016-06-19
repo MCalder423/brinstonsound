@@ -11,7 +11,8 @@ import mod_MessageHandler
 from threading import Thread
 import SoundClip
 import mod_playwav
-from SocketServer import BaseRequestHandler, UDPServer
+import socketserver
+from socketserver import BaseRequestHandler, UDPServer
 
 
 class UDPMessageHandler(BaseRequestHandler):

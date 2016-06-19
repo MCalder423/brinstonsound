@@ -1,0 +1,69 @@
+{
+	"type": "Collection",
+	"properties": {
+		"Name": {
+			"name": "Name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "Name",
+			"order": 0
+		},
+		"SwitchNumber": {
+			"name": "SwitchNumber",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "SwitchNumber",
+			"order": 1
+		},
+		"Location": {
+			"name": "Location",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "Location",
+			"order": 2
+		},
+		"Volume": {
+			"name": "Volume",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "Volume",
+			"order": 3
+		},
+		"Balance": {
+			"name": "Balance",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "Balance",
+			"order": 4
+		},
+		"Fade": {
+			"name": "Fade",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "Fade",
+			"order": 5
+		},
+		"minInterval": {
+			"name": "minInterval",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "minInterval",
+			"order": 6
+		},
+		"maxInterval": {
+			"name": "maxInterval",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "maxInterval",
+			"order": 7
+		}
+	}
+}
