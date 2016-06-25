@@ -9,12 +9,12 @@
 			"id": "Name",
 			"order": 0
 		},
-		"Sounds": {
-			"name": "Sounds",
-			"type": "array",
-			"typeLabel": "array",
+		"isCurrentScheme": {
+			"name": "isCurrentScheme",
+			"type": "boolean",
+			"typeLabel": "boolean",
 			"required": false,
-			"id": "Sounds",
+			"id": "isCurrentScheme",
 			"order": 1
 		}
 	}

@@ -1,13 +1,37 @@
 {
 	"type": "Collection",
 	"properties": {
+		"SchemeId": {
+			"name": "SchemeId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "SchemeId",
+			"order": 0
+		},
+		"SoundId": {
+			"name": "SoundId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "SoundId",
+			"order": 1
+		},
 		"Name": {
 			"name": "Name",
 			"type": "string",
 			"typeLabel": "string",
 			"required": true,
 			"id": "Name",
-			"order": 0
+			"order": 2
+		},
+		"Type": {
+			"name": "Type",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "Type",
+			"order": 3
 		},
 		"SwitchNumber": {
 			"name": "SwitchNumber",
@@ -15,15 +39,7 @@
 			"typeLabel": "number",
 			"required": false,
 			"id": "SwitchNumber",
-			"order": 1
-		},
-		"Location": {
-			"name": "Location",
-			"type": "string",
-			"typeLabel": "string",
-			"required": true,
-			"id": "Location",
-			"order": 2
+			"order": 4
 		},
 		"Volume": {
 			"name": "Volume",
@@ -31,7 +47,7 @@
 			"typeLabel": "number",
 			"required": false,
 			"id": "Volume",
-			"order": 3
+			"order": 5
 		},
 		"Balance": {
 			"name": "Balance",
@@ -39,7 +55,7 @@
 			"typeLabel": "number",
 			"required": false,
 			"id": "Balance",
-			"order": 4
+			"order": 6
 		},
 		"Fade": {
 			"name": "Fade",
@@ -47,23 +63,23 @@
 			"typeLabel": "number",
 			"required": false,
 			"id": "Fade",
-			"order": 5
-		},
-		"minInterval": {
-			"name": "minInterval",
-			"type": "number",
-			"typeLabel": "number",
-			"required": false,
-			"id": "minInterval",
-			"order": 6
-		},
-		"maxInterval": {
-			"name": "maxInterval",
-			"type": "number",
-			"typeLabel": "number",
-			"required": false,
-			"id": "maxInterval",
 			"order": 7
+		},
+		"MinInterval": {
+			"name": "MinInterval",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "MinInterval",
+			"order": 8
+		},
+		"MaxInterval": {
+			"name": "MaxInterval",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "MaxInterval",
+			"order": 9
 		}
 	}
 }

@@ -1,13 +1,21 @@
 {
 	"type": "Collection",
 	"properties": {
+		"Environment": {
+			"name": "Environment",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "Environment",
+			"order": 0
+		},
 		"Setting": {
 			"name": "Setting",
 			"type": "string",
 			"typeLabel": "string",
 			"required": true,
 			"id": "Setting",
-			"order": 0
+			"order": 1
 		},
 		"Value": {
 			"name": "Value",
@@ -15,7 +23,7 @@
 			"typeLabel": "string",
 			"required": true,
 			"id": "Value",
-			"order": 1
+			"order": 2
 		}
 	}
 }

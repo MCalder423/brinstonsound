@@ -1,0 +1,42 @@
+﻿@model manager_mvc.Models.SchemeList
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<h2>Local Sound Schemes</h2>
+
+@{
+}
+<h3>You have @Model.lstSchemes.Count sound schemes.</h3>
+
+
+<!-- List of local sound schemes-->
+<div class="row">
+    <div class="col-md-3">Name</div>
+    <div class="col-md-3">Current Scheme</div>
+    <div class="col-md-6">Sounds</div>
+</div>
+@foreach (var item in Model.lstSchemes)
+{
+    <div class="row">
+        <div class="col-md-3">@item.Name</div>
+        <div class="col-md-3">@item.isCurrentScheme</div>
+        <div class="col-md-6">
+            @foreach (var sound in item.Sounds)
+            {
+                <div class="row">
+                    <div class="col-md-2">@sound.Name</div>
+                    <div class="col-md-2">
+                        @if (sound.Type == "SWITCH")
+                        {
+                            @sound.Type @sound.SwitchNumber
+                        }
+                        else
+                        {
+                            @sound.Type
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}

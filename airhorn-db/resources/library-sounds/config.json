@@ -9,37 +9,29 @@
 			"id": "Name",
 			"order": 0
 		},
+		"Description": {
+			"name": "Description",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "Description",
+			"order": 1
+		},
+		"Category": {
+			"name": "Category",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "Category",
+			"order": 2
+		},
 		"Location": {
 			"name": "Location",
 			"type": "string",
 			"typeLabel": "string",
 			"required": true,
 			"id": "Location",
-			"order": 1
-		},
-		"Volume": {
-			"name": "Volume",
-			"type": "number",
-			"typeLabel": "number",
-			"required": false,
-			"id": "Volume",
-			"order": 2
-		},
-		"Balance": {
-			"name": "Balance",
-			"type": "number",
-			"typeLabel": "number",
-			"required": false,
-			"id": "Balance",
 			"order": 3
-		},
-		"Fade": {
-			"name": "Fade",
-			"type": "number",
-			"typeLabel": "number",
-			"required": false,
-			"id": "Fade",
-			"order": 4
 		}
 	}
 }
